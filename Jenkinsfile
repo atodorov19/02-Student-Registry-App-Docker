@@ -21,7 +21,7 @@ pipeline{
         }
         stage("Deploy")
             steps{
-                Echo "Deploying application..."
+                echo "Deploying application..."
                 bat "npm run deploy"    
             }
         }
