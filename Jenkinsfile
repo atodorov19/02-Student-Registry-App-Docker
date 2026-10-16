@@ -13,3 +13,5 @@ pipeline{
                 bat 'npm test'
             }
         }
+    }
+}
