@@ -19,11 +19,12 @@ pipeline{
                     ok: 'Deploy'
             }
         }
-        stage("Deploy")
+        stage("Deploy"){
             steps{
                 echo "Deploying application..."
                 bat "npm run deploy"    
             }
+        }
         }
     }
 
