@@ -9,6 +9,18 @@ pipeline{
             }
         }    
         stage("Run Unit Tests"){
+            parallel{
+                stage("Unit Test 1"){
+                    steps{
+                        bat 'npm test'
+                    }
+                }
+                stage("Unit Test 2"){
+                    steps{
+                        bat 'npm test'
+                    }
+                }
+            }
             steps{
                 bat 'npm test'
             }
