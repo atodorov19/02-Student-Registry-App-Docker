@@ -15,6 +15,7 @@ pipeline{
                         bat 'npm test'
                     }
                 }
+            }
                 stage("Unit Test 2"){
                     steps{
                         bat 'npm test'
@@ -42,5 +43,4 @@ pipeline{
             }
         }
     }
-}
 
