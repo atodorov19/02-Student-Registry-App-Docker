@@ -8,9 +8,14 @@ pipeline{
                 bat 'npm install'
             }
         }    
-        stage("Run Tests"){
+        stage("Run Unit Tests"){
             steps{
                 bat 'npm test'
+            }
+        }
+        stage("Run Integration tests"){
+            steps{
+                echo "Running integration tests"
             }
         }
         stage("Deploy to production"){
