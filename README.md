@@ -1,1 +1,1 @@
-Student registry October 2026
+Student registry October
